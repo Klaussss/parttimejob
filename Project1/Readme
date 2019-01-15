@@ -1,0 +1,9 @@
+Additional Design patterns:
+1. I use the virtual methods in Monster and Boss for the following reasons:
+	1) The Boss is inherited from Monster (with special attack), the only method I need to change is the "prepare_fight".
+	2) The Hero interacts with Boss and Monster, if I pass a pointer to the fight method of the Hero, so the "fight" method of the Hero is designed only for once.
+2. I use a singleton disign pattern, because in the whole process, there is only one hero.
+
+Additional game feature:
+  if the health point of the hero is less or equal than zero, the hero has the chance to transfer the attack points to health points, 1 attack points for 2 health points, so the hero can be saved for the last chance .
+
