@@ -25,7 +25,6 @@ public:
 		srand((int)time(0)+Health+Attack+Defence+FightIncrease);
 		int randres = lower + random((upper - lower+1));
 		return randres;
-
 	}
 
 public:

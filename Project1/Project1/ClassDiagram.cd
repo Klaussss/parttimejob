@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="The Common_ class is the parent class of all classes, with attribute values such as attack, defense, and health, and implements the generation of random numbers, the output of health status, and the data function of the overall state. Since the state of preparing and stopping the battle depends on the hero or the monster, only the declaration of the abstract method is made in the Common_ class.">
+    <Position X="12.125" Y="2.281" Height="1.854" Width="2.825" />
+  </Comment>
+  <Comment CommentText="The Hero class is implemented in a singleton mode with pre-combat preparation, combat processes, rest after the battle, and rewards after the battle. In addition to the processing, the name setting and the use of Special Attack are added.">
+    <Position X="14" Y="7.5" Height="1.604" Width="2.065" />
+  </Comment>
+  <Comment CommentText="The Monster class inherits from the Common_ class and has preparations for battle, battles, and breaks after the battle.">
+    <Position X="5.229" Y="6.736" Height="1.222" Width="1.906" />
+  </Comment>
+  <Comment CommentText="The Boss class inherits from the Monster class and adds the functionality of Special Attack.">
+    <Position X="5.472" Y="10.428" Height="0.978" Width="1.966" />
+  </Comment>
+  <Class Name="Boss">
+    <Position X="7.75" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAACAAAAAAAAAAQAAAAAAAAAAAABAACAAAAAAAAAA=</HashCode>
+      <FileName>Boss.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hero">
+    <Position X="10.75" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>QAABAiGAAAAAAABACAAACABhAAFAAAAACAAAQACAAEA=</HashCode>
+      <FileName>Hero.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster">
+    <Position X="7.75" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAAAAAAAAACAAAAAAAAAAAAAAACgAAAACAAAA=</HashCode>
+      <FileName>Monster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common_">
+    <Position X="9.25" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAQACgGAABBAAAAAAAAAAgAAAIAEAAgAGAAAAgCAAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
